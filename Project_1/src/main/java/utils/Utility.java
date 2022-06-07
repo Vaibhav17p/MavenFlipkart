@@ -28,11 +28,11 @@ public class Utility {
 		
 	}
 	
-	public static String getdataeXcelSHeet(String sheetName,int a, int b) throws EncryptedDocumentException, IOException {
+	//public static String getdataeXcelSHeet(String sheetName,int a, int b) throws EncryptedDocumentException, IOException {
 		
-		String data;
+		//String data;
 		String path= "C:\\Users\\ADMIN\\Desktop\\Data.xlsx";
-		FileInputStream file= new FileInputStream(path);
+		//FileInputStream file= new FileInputStream(path);
 		Workbook book = WorkbookFactory.create(file);
 		try {
 			data=book.getSheet("Sheet1").getRow(a).getCell(b).getStringCellValue();
