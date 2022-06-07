@@ -28,21 +28,22 @@ public class Utility {
 		
 	}
 	
-//	public static String getdataeXcelSHeet(String sheetName,int a, int b) throws EncryptedDocumentException, IOException {
-//		
-//		String data;
-//		String path= "C:\\Users\\ADMIN\\Desktop\\Data.xlsx";
-//		FileInputStream file= new FileInputStream(path);
-//		Workbook book = WorkbookFactory.create(file);
-//		try {
-//			data=book.getSheet("Sheet1").getRow(a).getCell(b).getStringCellValue();
-//		}
-//	    catch(IllegalStateException e){
-//			double value=book.getSheet(sheetName).getRow(a).getCell(b).getStringCellValue();
-//			data=Double.toString(num);
-//		}
-//		return data;
-//	}
+	public static String getdataeXcelSHeet(String sheetName,int a, int b) throws EncryptedDocumentException, IOException {
+		
+		String data;
+		String path= "C:\\Users\\ADMIN\\Desktop\\Data.xlsx";
+		FileInputStream file= new FileInputStream(path);
+		Workbook book = WorkbookFactory.create(file);
+		try {
+			data=book.getSheet("Sheet1").getRow(a).getCell(b).getStringCellValue();
+		}
+	    catch(IllegalStateException e){
+		//	double value=book.getSheet(sheetName).getRow(a).getCell(b).getStringCellValue();
+			//data=Double.toString(num);
+		}
+	//	return data;
+		return path;
+	}
 //
 	}
 
